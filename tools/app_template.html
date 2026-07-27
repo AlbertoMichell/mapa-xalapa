@@ -26,15 +26,27 @@ header .chips{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
   padding:3px 10px;font-size:12px;color:var(--tx2)}
 .chip b{color:var(--tx)}
 
-aside{background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;padding:12px}
+/* barra lateral de configuracion: mismo "liquid glass" que el panel y la tabla */
+aside{background:rgba(255,255,255,.5);
+  background-image:linear-gradient(165deg, rgba(255,255,255,.65), rgba(255,255,255,.25));
+  backdrop-filter:blur(28px) saturate(190%);
+  -webkit-backdrop-filter:blur(28px) saturate(190%);
+  border-right:1px solid rgba(255,255,255,.4);
+  box-shadow:inset -1px 0 0 rgba(255,255,255,.2), 6px 0 30px rgba(10,20,35,.22);
+  overflow-y:auto;padding:12px;color:#1c1c1e}
 aside section{margin-bottom:16px}
-aside h2{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--tx2);
+aside h2{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#6e6e73;
   margin:0 0 8px;font-weight:700}
 input[type=search],select,input[type=text]{width:100%;padding:7px 9px;border-radius:7px;
   border:1px solid var(--line);background:var(--panel2);color:var(--tx);font-size:13px}
+aside input[type=search],aside select,aside input[type=text]{
+  background:rgba(255,255,255,.55);color:#1c1c1e;border:1px solid rgba(60,60,67,.28)}
+aside input[type=search]::placeholder{color:#8e8e93}
 label.row{display:flex;align-items:center;gap:8px;padding:3px 0;cursor:pointer;font-size:13px}
 label.row input{accent-color:var(--acc);cursor:pointer}
 label.row .n{margin-left:auto;color:var(--tx2);font-size:11px;font-variant-numeric:tabular-nums}
+aside label.row{color:#1c1c1e}
+aside label.row .n{color:#6e6e73}
 .dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto}
 .slider{display:flex;align-items:center;gap:8px}
 .slider input{flex:1}
@@ -42,6 +54,13 @@ button{background:var(--panel2);color:var(--tx);border:1px solid var(--line);
   border-radius:7px;padding:7px 10px;font-size:13px;cursor:pointer;width:100%}
 button:hover{border-color:var(--acc)}
 button.on{background:var(--acc);border-color:var(--acc);color:#04121f;font-weight:600}
+aside button{background:rgba(255,255,255,.55);color:#1c1c1e;
+  border:1px solid rgba(255,255,255,.85);backdrop-filter:blur(6px)}
+aside button:hover{background:rgba(255,255,255,.8);border-color:#0a84ff;color:#0a58ca}
+aside button.on{background:#0a84ff;border-color:#0a84ff;color:#fff}
+aside table{background:transparent}
+aside th,aside td{border-bottom:1px solid rgba(60,60,67,.15);color:#1c1c1e}
+aside .aviso{background:rgba(255,255,255,.35);border:1px solid rgba(60,60,67,.15);color:#3a3a3c}
 .btns{display:flex;gap:6px}
 /* el mapa se ancla al contenedor: si midiera 0 de alto, Leaflet calcularia
    mal el encuadre inicial y no dibujaria ningun marcador */
