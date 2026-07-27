@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/_probe.json
+data/_enrich.log
+.claude/settings.local.json

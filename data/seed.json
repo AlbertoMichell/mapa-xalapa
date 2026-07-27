@@ -1,0 +1,527 @@
+[
+ {
+  "nombre": "Palacio de Gobierno del Estado",
+  "direccion": "Juan de la Luz Enríquez s/n esq. Leandro Valle, Zona Centro",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría de Gobierno",
+  "direccion": "Palacio de Gobierno, Av. Enríquez s/n",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Contraloría General (oficina del titular)",
+  "direccion": "Palacio de Gobierno, planta alta",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Palacio Municipal / Ayuntamiento de Xalapa",
+  "direccion": "Zona Centro",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dirección de Administración (Ayuntamiento)",
+  "direccion": "Callejón de Rojas",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría de Seguridad Pública (Torre Central)",
+  "direccion": "Ignacio Zaragoza s/n",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "SAT — Administración Desconcentrada",
+  "direccion": "Manlio Fabio Altamirano 1",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Fiscalía General del Estado (sede Centro)",
+  "direccion": "Av. Manuel Ávila Camacho 11",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Comisión Estatal de Derechos Humanos",
+  "direccion": "Carrillo Puerto 21",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "OPLE Veracruz",
+  "direccion": "Benito Juárez 69",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "OPLE (oficinas Clavijero)",
+  "direccion": "Francisco Javier Clavijero 188",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Poder Judicial (sede administrativa)",
+  "direccion": "Benito Juárez 69",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "ISSSTE (módulo Centro)",
+  "direccion": "Av. Manuel Ávila Camacho 28",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "IMSS Delegación Veracruz Norte",
+  "direccion": "Lomas del Estadio",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría de Salud (oficina Centro)",
+  "direccion": "Av. Salvador Díaz Mirón 33",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Leandro Valle esq. Zaragoza",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Francisco I. Madero 3",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Notaría Pública No. 1 (Silvio Lagos)",
+  "direccion": "M. Hidalgo 8",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "privada",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Notaría Pública No. 33",
+  "direccion": "Benito Juárez 137",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "privada",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Despacho Salmerón Ruiz",
+  "direccion": "C. Rojano 14",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "privada",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Atila Financiera",
+  "direccion": "Av. Manuel Ávila Camacho 1",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "privada",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "H. Congreso del Estado",
+  "direccion": "Av. Encanto s/n esq. Lázaro Cárdenas",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Poder Judicial del Estado (Palacio de Justicia)",
+  "direccion": "Av. Lázaro Cárdenas 373",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Tribunal Superior de Justicia",
+  "direccion": "Av. Lázaro Cárdenas 373",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Tribunal Contencioso Administrativo, Sala Regional Zona Centro",
+  "direccion": "Palacio de Justicia, 3er piso",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Tribunal de Conciliación y Arbitraje",
+  "direccion": "Ferrocarril Interoceánico, CP 91170",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Lázaro Cárdenas 313, CP 91180",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. de las Culturas Veracruzanas 120",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "SEFIPLAN (Secretaría de Finanzas y Planeación)",
+  "direccion": "Av. Xalapa 301, U.H. del Bosque",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "ISSSTE Delegación Estatal Veracruz",
+  "direccion": "Av. Xalapa 205, U.H. del Bosque",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Ruiz Cortines s/n esq. Av. Xalapa, Unidad del Bosque",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "ISSSTE (módulo)",
+  "direccion": "Av. Jalapa 279, local L25, Unidad del Bosque",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "ISSSTE (módulo)",
+  "direccion": "Avenida Xalapa 568",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Servicios de Salud de Veracruz (SESVER)",
+  "direccion": "Soconusco 31, Col. Aguacatal",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría de Salud del Estado",
+  "direccion": "Av. Américas 384, Los Laureles",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "INE — Junta Local Ejecutiva",
+  "direccion": "C. Nuevo León 87, Progreso Macuiltépetl",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "INE — Junta Distrital 10",
+  "direccion": "Av. Manuel Ávila Camacho 168",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Manuel Ávila Camacho 195, Francisco Ferrer Guardia",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Adolfo Ruiz Cortines 1419, CP 91020",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Orizaba 48, CP 91020",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Américas 58, Col. del Maestro",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Banamex sucursal Ávila Camacho",
+  "direccion": "Av. Ávila Camacho 243",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "privada",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Santander Smart",
+  "direccion": "Av. Ávila Camacho 298",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "privada",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Torre Orgullo Veracruzano — Secretaría de Protección Civil",
+  "direccion": "Av. Lázaro Cárdenas 1104",
+  "zona": "COL. REVOLUCIÓN (CP 91100)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Torre Orgullo Veracruzano — SEV, Dirección General de Primarias Estatales",
+  "direccion": "mismo edificio",
+  "zona": "COL. REVOLUCIÓN (CP 91100)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Torre Orgullo Veracruzano — Oficina de Prestaciones y Afiliación IMSS estatal",
+  "direccion": "Av. Lázaro Cárdenas 1104-B",
+  "zona": "COL. REVOLUCIÓN (CP 91100)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría de Educación y Cultura",
+  "direccion": "Ignacio Comonfort s/n",
+  "zona": "COL. REVOLUCIÓN (CP 91100)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Contraloría General del Estado",
+  "direccion": "C. Ignacio de la Llave 105",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dirección Gral. de Fiscalización Gubernamental (CGE)",
+  "direccion": "Ignacio de la Llave 105, 1er piso",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dirección Gral. de Responsabilidades Administrativas (CGE)",
+  "direccion": "Ignacio de la Llave 105, 1er piso",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dirección Gral. de Transparencia y Datos Personales (CGE)",
+  "direccion": "Ignacio de la Llave 105",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Órgano Interno de Control (CGE)",
+  "direccion": "Col. Tamborrel, CP 91050",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "INVIVIENDA",
+  "direccion": "Cuauhpopoca 11, Col. Salud",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "DIF Estatal Veracruz",
+  "direccion": "Km 1.5 Carretera Xalapa–Coatepec, Col. Benito Juárez",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Procuraduría Estatal de Protección al Medio Ambiente",
+  "direccion": "Av. Paseo de las Flores s/n",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Registro Público de la Propiedad y del Comercio",
+  "direccion": "Apolinar Castillo 5, Los Ángeles",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "SIOP (Infraestructura y Obras Públicas)",
+  "direccion": "Coronel Pablo Frutis 4, Col. Badillo",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría de Educación y Cultura (Araucarias)",
+  "direccion": "Av. Araucarias 5, Col. Inmecafé",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Araucarias 3, piso 1, Col. Badillo",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. 20 de Noviembre Oriente 374, CP 91064",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Mosaico Working Center",
+  "direccion": "Gral. Adalberto Tejeda 25, Col. Pumar",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "privada",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Torre \"O\"",
+  "direccion": "Isaías A. Rodríguez Vivas 6-A, Sipeh Ánimas",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "privada",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "SEV — Secretaría de Educación de Veracruz",
+  "direccion": "Km 4.5 Carretera Xalapa–Veracruz, Rubí Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Km 4.5 Carretera Xalapa–Veracruz, Col. SAHOP",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "ORFIS (Órgano de Fiscalización Superior)",
+  "direccion": "Carr. Xalapa–Veracruz 1102",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Fiscalía General del Estado (sede principal)",
+  "direccion": "Circuito Guízar y Valencia 707, Reserva Territorial",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría Ejecutiva del Consejo Estatal de Seguridad Pública",
+  "direccion": "Guízar y Valencia / Av. Murillo Vidal",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Subdelegación IMSS Xalapa",
+  "direccion": "Circuito Guízar y Valencia 1, Col. Xalapa 2000",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría de Desarrollo Social del Estado",
+  "direccion": "Av. Vista Hermosa 7, Torre Unión piso 2, Rubí Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Secretaría de Bienestar (federal)",
+  "direccion": "Carr. Xalapa–Veracruz Km 0+700, Indeco Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Torre Ánimas",
+  "direccion": "Blvd. Cristóbal Colón 5, Rubí Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "mixta",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal en Torre Ánimas",
+  "direccion": "Blvd. Cristóbal Colón 5-1414",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Blvd. Cristóbal Colón 5-1406, Jardines de las Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Torre Corporativa Olmo (pisos 6 y 7)",
+  "direccion": "Distribuidor Vial 1009, Reserva Territorial",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ },
+ {
+  "nombre": "Torre Centro Mayor / Torre JV",
+  "direccion": "Principal 4, Col. Pastoresa",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md"
+ }
+]

@@ -1,0 +1,1972 @@
+[
+ {
+  "nombre": "Palacio de Gobierno del Estado",
+  "direccion": "Juan de la Luz Enríquez s/n esq. Leandro Valle, Zona Centro",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5270147,
+  "lon": -96.9225197,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "relation/19247480",
+  "match": "Palacio de Gobierno",
+  "confianza": 0.88,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91080",
+   "via": "Calle Ignacio Zaragoza",
+   "direccion_osm": "Palacio de Gobierno, Calle Ignacio Zaragoza, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91080, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91080 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Secretaría de Gobierno",
+  "direccion": "Palacio de Gobierno, Av. Enríquez s/n",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5270243,
+  "lon": -96.92244,
+  "precision": "poi_exacto",
+  "verificacion": "nominatim",
+  "consulta": "Palacio de Gobierno, Xalapa, Veracruz",
+  "ref": "relation/19247480",
+  "match": "Palacio de Gobierno, Miguel Barragán, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91080, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91080",
+   "via": "Calle Ignacio Zaragoza",
+   "direccion_osm": "Palacio de Gobierno, Calle Ignacio Zaragoza, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91080, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91080 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Contraloría General (oficina del titular)",
+  "direccion": "Palacio de Gobierno, planta alta",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5270243,
+  "lon": -96.92244,
+  "precision": "poi_exacto",
+  "verificacion": "nominatim",
+  "consulta": "Palacio de Gobierno, Xalapa, Veracruz",
+  "ref": "relation/19247480",
+  "match": "Palacio de Gobierno, Miguel Barragán, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91080, México",
+  "confianza": null,
+  "comparte_con": 1,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91080",
+   "via": "Calle Ignacio Zaragoza",
+   "direccion_osm": "Palacio de Gobierno, Calle Ignacio Zaragoza, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91080, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "mismo inmueble que #1 (Secretaría de Gobierno)",
+    "CP OSM 91080 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Palacio Municipal / Ayuntamiento de Xalapa",
+  "direccion": "Zona Centro",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5274256,
+  "lon": -96.9239219,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/146836892",
+  "match": "Palacio Municipal",
+  "confianza": 0.89,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91000",
+   "via": "Callejón de Rojas",
+   "direccion_osm": "Palacio Municipal, Callejón de Rojas, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Dirección de Administración (Ayuntamiento)",
+  "direccion": "Callejón de Rojas",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5280964,
+  "lon": -96.9240738,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Callejón de Rojas, Xalapa, Veracruz",
+  "ref": "way/146836902",
+  "match": "Callejón de Rojas, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91080, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91080",
+   "via": "Callejón de Rojas",
+   "direccion_osm": "Archivo Histórico Municipal de Xalapa, 10, Callejón de Rojas, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91080, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91080 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Secretaría de Seguridad Pública (Torre Central)",
+  "direccion": "Ignacio Zaragoza s/n",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5070524,
+  "lon": -96.8872606,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/384994579",
+  "match": "Secretaría de Seguridad Pública",
+  "confianza": 0.86,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zipor",
+   "cp": "91097",
+   "via": "Paseo",
+   "direccion_osm": "Secretaría de Seguridad Pública, Paseo, Zipor, Xalapa, Veracruz, 91097, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91097 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "SAT — Administración Desconcentrada",
+  "direccion": "Manlio Fabio Altamirano 1",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5301473,
+  "lon": -96.9253696,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Manlio Fabio Altamirano 1, Xalapa, Veracruz",
+  "ref": "way/902816178",
+  "match": "Manlio Fabio Altamirano 1 — extremo levantado no. 53",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91000",
+   "via": "Calle Manlio Fabio Altamirano",
+   "direccion_osm": "Malamadre, 53, Calle Manlio Fabio Altamirano, Los Sauces, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Fiscalía General del Estado (sede Centro)",
+  "direccion": "Av. Manuel Ávila Camacho 11",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5270685,
+  "lon": -96.9253495,
+  "precision": "numero_exacto",
+  "verificacion": "nominatim",
+  "consulta": "Av. Manuel Ávila Camacho 11, Xalapa, Veracruz",
+  "ref": "way/691374149",
+  "match": "Mueblería La Económica de Xalapa, 11, Avenida Manuel Ávila Camacho, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91000, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91080",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "Mueblería la Económica de Xalapa, 11, Avenida Manuel Ávila Camacho, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91080, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91080 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Comisión Estatal de Derechos Humanos",
+  "direccion": "Carrillo Puerto 21",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5282427,
+  "lon": -96.9207251,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/3382793226",
+  "match": "Comisión Estatal de Derechos Humanos",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91000",
+   "via": "Calle Carrillo Puerto",
+   "direccion_osm": "Comisión Estatal de Derechos Humanos, Calle Carrillo Puerto, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "OPLE Veracruz",
+  "direccion": "Benito Juárez 69",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5288112,
+  "lon": -96.9241607,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/660618915",
+  "match": "OPLE Veracruz",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91000",
+   "via": "Calle Benito Juárez",
+   "direccion_osm": "OPLE Veracruz, Calle Benito Juárez, Los Sauces, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "OPLE (oficinas Clavijero)",
+  "direccion": "Francisco Javier Clavijero 188",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5354451,
+  "lon": -96.9245592,
+  "precision": "numero_interpolado",
+  "verificacion": "osm_numeracion",
+  "consulta": "Francisco Javier Clavijero 188, Xalapa, Veracruz",
+  "ref": "way/308097368",
+  "match": "Francisco Javier Clavijero 188 — entre no. 112 y no. 239",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91030",
+   "via": "Calle Francisco Javier Clavijero",
+   "direccion_osm": "Calle Francisco Javier Clavijero, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91030, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91030 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Poder Judicial (sede administrativa)",
+  "direccion": "Benito Juárez 69",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5382069,
+  "lon": -96.9083523,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/303080303",
+  "match": "Poder Judicial",
+  "confianza": 0.81,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Francisco Villa",
+   "cp": "91180",
+   "via": "Avenida Lázaro Cárdenas",
+   "direccion_osm": "Poder Judicial, Avenida Lázaro Cárdenas, Francisco Villa, Xalapa, Veracruz, 91180, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91180 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "ISSSTE (módulo Centro)",
+  "direccion": "Av. Manuel Ávila Camacho 28",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5275673,
+  "lon": -96.9260899,
+  "precision": "numero_interpolado",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Manuel Ávila Camacho 28, Xalapa, Veracruz",
+  "ref": "way/903571733",
+  "match": "Av. Manuel Ávila Camacho 28 — entre no. 27 y no. 42",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91080",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "Muebles Dico, 27A, Avenida Manuel Ávila Camacho, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91080, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91080 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "IMSS Delegación Veracruz Norte",
+  "direccion": "Lomas del Estadio",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5202727,
+  "lon": -96.9177052,
+  "precision": "aproximada",
+  "verificacion": "nominatim",
+  "consulta": "Lomas del Estadio, Xalapa, Veracruz",
+  "ref": "relation/4634565",
+  "match": "Lomas del Estadio, Xalapa, Veracruz, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Lomas del Estadio",
+   "cp": "91090",
+   "via": "Calle Vista Hermosa",
+   "direccion_osm": "Colombe Hotel Boutique, 16, Calle Vista Hermosa, Lomas del Estadio, Xalapa, Veracruz, 91090, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91090 vs 91000 declarado",
+    "ubicacion a nivel aproximada"
+   ]
+  }
+ },
+ {
+  "nombre": "Secretaría de Salud (oficina Centro)",
+  "direccion": "Av. Salvador Díaz Mirón 33",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5465425,
+  "lon": -96.9308696,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/396010367",
+  "match": "Centro de Salud Dr. José A. Maraboto",
+  "confianza": 0.52,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruz",
+   "cp": "91020",
+   "via": "Calle Santiago Bonilla",
+   "direccion_osm": "Centro de Salud Dr. José A. Maraboto, Calle Santiago Bonilla, Veracruz, Xalapa, Veracruz, 91020, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91020 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Leandro Valle esq. Zaragoza",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5265871,
+  "lon": -96.9219193,
+  "precision": "cruce_calles",
+  "verificacion": "osm_cruce",
+  "ref": "node/1600682718",
+  "match": "cruce Leandro Valle / Ignacio Zaragoza",
+  "nota": "cruce de vialidades declarado en la direccion",
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Venustiano Carranza",
+   "cp": "91000",
+   "via": "Calle Sebastián Camacho",
+   "direccion_osm": "El Mesón del Alférez, 2, Calle Sebastián Camacho, Venustiano Carranza, Felipe Carrillo Puerto, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Francisco I. Madero 3",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5306543,
+  "lon": -96.9217156,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Francisco I. Madero 3, Xalapa, Veracruz",
+  "ref": "node/4151224741",
+  "match": "Francisco I. Madero 3 — extremo levantado no. 40",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91000",
+   "via": "Calle Francisco I. Madero",
+   "direccion_osm": "Mi Casa de Xallitic, 40, Calle Francisco I. Madero, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Notaría Pública No. 1 (Silvio Lagos)",
+  "direccion": "M. Hidalgo 8",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "privada",
+  "fuente": "direcciones.md",
+  "lat": 19.5273279,
+  "lon": -96.9194317,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/2481330870",
+  "match": "Notaría Pública No. 14",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91000",
+   "via": "Calle José María Mata",
+   "direccion_osm": "Notaría Pública No. 14, 8, Calle José María Mata, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Notaría Pública No. 33",
+  "direccion": "Benito Juárez 137",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "privada",
+  "fuente": "direcciones.md",
+  "lat": 19.5283356,
+  "lon": -96.9208414,
+  "precision": "poi_exacto",
+  "verificacion": "nominatim",
+  "consulta": "Notaría Pública No. 33, Xalapa, Veracruz",
+  "ref": "way/397099562",
+  "match": "Notaría Pública No. 13, Calle Carrillo Puerto, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91000, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91000",
+   "via": "Calle Carrillo Puerto",
+   "direccion_osm": "Notaría Pública No. 13, Calle Carrillo Puerto, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Despacho Salmerón Ruiz",
+  "direccion": "C. Rojano 14",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "privada",
+  "fuente": "direcciones.md",
+  "lat": 19.5284903,
+  "lon": -96.9173389,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "C. Rojano 14, Xalapa, Veracruz",
+  "ref": "way/147383600",
+  "match": "Calle Rojano, Fraccionamiento Ensueño, Xalapa, Veracruz, 91000, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Fraccionamiento Ensueño",
+   "cp": "91000",
+   "via": "Calle Rojano",
+   "direccion_osm": "Bundo, 5, Calle Rojano, Fraccionamiento Ensueño, Xalapa, Veracruz, 91000, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Atila Financiera",
+  "direccion": "Av. Manuel Ávila Camacho 1",
+  "zona": "ZONA CENTRO (CP 91000)",
+  "sector": "privada",
+  "fuente": "direcciones.md",
+  "lat": 19.5271857,
+  "lon": -96.9252236,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Manuel Ávila Camacho 1, Xalapa, Veracruz",
+  "ref": "way/903571733",
+  "match": "Av. Manuel Ávila Camacho 1 — extremo levantado no. 7",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Centro",
+   "cp": "91080",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "La Contemporánea, 7, Avenida Manuel Ávila Camacho, Venustiano Carranza, Zona Centro, Xalapa, Veracruz, 91080, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91080 vs 91000 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "H. Congreso del Estado",
+  "direccion": "Av. Encanto s/n esq. Lázaro Cárdenas",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5409656,
+  "lon": -96.9090715,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "relation/11909926",
+  "match": "Congreso del Estado de Veracruz",
+  "confianza": 0.88,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "El Mirador",
+   "cp": "91180",
+   "via": "Avenida Encanto",
+   "direccion_osm": "Congreso del Estado de Veracruz, Avenida Encanto, El Mirador, Xalapa, Veracruz, 91180, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Poder Judicial del Estado (Palacio de Justicia)",
+  "direccion": "Av. Lázaro Cárdenas 373",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5325337,
+  "lon": -96.9055214,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Lázaro Cárdenas 373, Xalapa, Veracruz",
+  "ref": "way/895254144",
+  "match": "Av. Lázaro Cárdenas 373 — domicilio levantado no. 421",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Encinal",
+   "cp": "91000",
+   "via": "Calle Zempoala",
+   "direccion_osm": "Brigada Benito Juárez partido político Morena, 421, Calle Zempoala, Encinal, Xalapa, Veracruz, 91000, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91000 vs 91170/91180 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Tribunal Superior de Justicia",
+  "direccion": "Av. Lázaro Cárdenas 373",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5377124,
+  "lon": -96.9085613,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/440356365",
+  "match": "Tribunal Superior de Justicia del Edo. de Veracruz",
+  "confianza": 0.8,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Laureles",
+   "cp": "91180",
+   "via": "Calle Emilio Leyzegui",
+   "direccion_osm": "Tribunal Superior de Justicia del Edo. de Veracruz, Calle Emilio Leyzegui, Los Laureles, Xalapa, Veracruz, 91180, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Tribunal Contencioso Administrativo, Sala Regional Zona Centro",
+  "direccion": "Palacio de Justicia, 3er piso",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5388926,
+  "lon": -96.9084305,
+  "precision": "poi_exacto",
+  "verificacion": "nominatim",
+  "consulta": "Palacio de Justicia, Xalapa, Veracruz",
+  "ref": "way/154003784",
+  "match": "Palacio de Justicia, Calle Ferrocarril Interoceánico, Los Laureles, Xalapa, Veracruz, 91170, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Laureles",
+   "cp": "91170",
+   "via": "Calle Ferrocarril Interoceánico",
+   "direccion_osm": "Palacio de Justicia, Calle Ferrocarril Interoceánico, Los Laureles, Xalapa, Veracruz, 91170, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Tribunal de Conciliación y Arbitraje",
+  "direccion": "Ferrocarril Interoceánico, CP 91170",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5412515,
+  "lon": -96.9312674,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/8419506263",
+  "match": "Tribunal de Conciliación y Arbitraje del Poder Judicial del Estado de Veracruz",
+  "confianza": 0.75,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruz",
+   "cp": "91020",
+   "via": "Calle Santiago Bonilla",
+   "direccion_osm": "Tribunal de Conciliación y Arbitraje del Poder Judicial del Estado de Veracruz, Calle Santiago Bonilla, Veracruz, Xalapa, Veracruz, 91020, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91020 vs 91170/91180 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Lázaro Cárdenas 313, CP 91180",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5244831,
+  "lon": -96.9361403,
+  "precision": "numero_interpolado",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Lázaro Cárdenas 313, Xalapa, Veracruz",
+  "ref": "way/903601957",
+  "match": "Av. Lázaro Cárdenas 313 — entre no. 300 y no. 318",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91056",
+   "via": "Avenida Lázaro Cárdenas",
+   "direccion_osm": "Fasti (El Globo), 318, Avenida Lázaro Cárdenas, Los Sauces, Venustiano Carranza, Benito Juárez, Xalapa, Veracruz, 91056, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91056 vs 91170/91180 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. de las Culturas Veracruzanas 120",
+  "zona": "EL MIRADOR / LÁZARO CÁRDENAS (CP 91170–91180)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5079844,
+  "lon": -96.8819063,
+  "precision": "calle",
+  "verificacion": "osm_objeto",
+  "ref": "way/184843026",
+  "match": "Calle Cultura Veracruzana",
+  "nota": "unica via 'Cultura Veracruzana' cartografiada en Xalapa; el numero 120 no esta en OSM",
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Residencial del Lago",
+   "cp": "91096",
+   "via": "Calle Cultura Veracruzana",
+   "direccion_osm": "Calle Cultura Veracruzana, Residencial del Lago, Xalapa, Veracruz, 91096, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91096 vs 91170/91180 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "SEFIPLAN (Secretaría de Finanzas y Planeación)",
+  "direccion": "Av. Xalapa 301, U.H. del Bosque",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5637135,
+  "lon": -96.9296541,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/338813363",
+  "match": "Secretería de Finanzas y Planeación del Estado de Veracruz",
+  "confianza": 0.61,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Virginia Cordero de Murillo Vidal",
+   "cp": "91110",
+   "via": "Calle TVMás",
+   "direccion_osm": "Secretería de Finanzas y Planeación del Estado de Veracruz, Calle TVMás, Virginia Cordero de Murillo Vidal, Xalapa, Veracruz, 91110, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91110 vs 91010/91017 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "ISSSTE Delegación Estatal Veracruz",
+  "direccion": "Av. Xalapa 205, U.H. del Bosque",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5456534,
+  "lon": -96.9279558,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Av. Xalapa 205, Xalapa, Veracruz",
+  "ref": "way/887298527",
+  "match": "Avenida Xalapa, Colonia del Maestro, Xalapa, Veracruz, 91020, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Colonia del Maestro",
+   "cp": "91020",
+   "via": "Avenida Xalapa",
+   "direccion_osm": "Avenida Xalapa, Colonia del Maestro, Xalapa, Veracruz, 91020, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91020 vs 91010/91017 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Ruiz Cortines s/n esq. Av. Xalapa, Unidad del Bosque",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5622809,
+  "lon": -96.9289264,
+  "precision": "cruce_calles",
+  "verificacion": "osm_cruce",
+  "ref": "node/3033468627",
+  "match": "cruce Adolfo Ruiz Cortines / Avenida Xalapa",
+  "nota": "cruce de vialidades declarado en la direccion",
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Virginia Cordero de Murillo Vidal",
+   "cp": "91110",
+   "via": "Boulevard Adolfo Ruiz Cortines",
+   "direccion_osm": "Boulevard Adolfo Ruiz Cortines, Virginia Cordero de Murillo Vidal, Xalapa, Veracruz, 91110, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91110 vs 91010/91017 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "ISSSTE (módulo)",
+  "direccion": "Av. Jalapa 279, local L25, Unidad del Bosque",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5453117,
+  "lon": -96.9375538,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/394358508",
+  "match": "ISSSTE Clínica Hospital",
+  "confianza": 0.72,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Obrero Campesina",
+   "cp": "91020",
+   "via": "Privada Virgilio Uribe",
+   "direccion_osm": "ISSSTE Clínica Hospital, Privada Virgilio Uribe, Obrero Campesina, Xalapa, Veracruz, 91020, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91020 vs 91010/91017 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "ISSSTE (módulo)",
+  "direccion": "Avenida Xalapa 568",
+  "zona": "UNIDAD DEL BOSQUE / AV. XALAPA (CP 91010–91017)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5579801,
+  "lon": -96.9286049,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Avenida Xalapa 568, Xalapa, Veracruz",
+  "ref": "way/412130041",
+  "match": "Avenida Xalapa, Virginia Cordero de Murillo Vidal, Xalapa, Veracruz, 91110, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Virginia Cordero de Murillo Vidal",
+   "cp": "91110",
+   "via": "Avenida Xalapa",
+   "direccion_osm": "Avenida Xalapa, Virginia Cordero de Murillo Vidal, Xalapa, Veracruz, 91110, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91110 vs 91010/91017 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Servicios de Salud de Veracruz (SESVER)",
+  "direccion": "Soconusco 31, Col. Aguacatal",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5447477,
+  "lon": -96.9243706,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Soconusco 31, Col. Aguacatal, Xalapa, Veracruz",
+  "ref": "way/882731857",
+  "match": "Calle Soconusco, Aguacatal, Xalapa, Veracruz, 91130, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Aguacatal",
+   "cp": "91130",
+   "via": "Calle Soconusco",
+   "direccion_osm": "Calle Soconusco, Aguacatal, Xalapa, Veracruz, 91130, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Secretaría de Salud del Estado",
+  "direccion": "Av. Américas 384, Los Laureles",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5370948,
+  "lon": -96.9148647,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Américas 384, Los Laureles, Xalapa, Veracruz",
+  "ref": "way/150704997",
+  "match": "Av. Américas 384 — extremo levantado no. 268",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Laureles",
+   "cp": "91030",
+   "via": "Avenida de las Américas",
+   "direccion_osm": "BikeZone, 268-A, Avenida de las Américas, Los Laureles, Xalapa, Veracruz, 91030, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91030 vs 91020/91130 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "INE — Junta Local Ejecutiva",
+  "direccion": "C. Nuevo León 87, Progreso Macuiltépetl",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5356908,
+  "lon": -96.9172901,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/6904262089",
+  "match": "INE",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Unidad Habitacional Francisco Sarabia",
+   "cp": "91030",
+   "via": "Calle Francisco Sarabia",
+   "direccion_osm": "INE, Calle Francisco Sarabia, Unidad Habitacional Francisco Sarabia, Xalapa, Veracruz, 91030, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91030 vs 91020/91130 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "INE — Junta Distrital 10",
+  "direccion": "Av. Manuel Ávila Camacho 168",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5350406,
+  "lon": -96.9324792,
+  "precision": "numero_interpolado",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Manuel Ávila Camacho 168, Xalapa, Veracruz",
+  "ref": "way/882973122",
+  "match": "Av. Manuel Ávila Camacho 168 — entre no. 167 y no. 231",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruzana",
+   "cp": "91050",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "Plaza Si Computación, 167, Avenida Manuel Ávila Camacho, Veracruzana, Xalapa, Veracruz, 91050, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91050 vs 91020/91130 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Manuel Ávila Camacho 195, Francisco Ferrer Guardia",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5363858,
+  "lon": -96.9310338,
+  "precision": "numero_interpolado",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Manuel Ávila Camacho 195, Xalapa, Veracruz",
+  "ref": "way/903571733",
+  "match": "Av. Manuel Ávila Camacho 195 — entre no. 167 y no. 231",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruzana",
+   "cp": "91020",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "Avenida Manuel Ávila Camacho, Veracruzana, Xalapa, Veracruz, 91020, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Adolfo Ruiz Cortines 1419, CP 91020",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5367324,
+  "lon": -96.9325401,
+  "precision": "numero_exacto",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Adolfo Ruiz Cortines 1419, Xalapa, Veracruz",
+  "ref": "way/369565385",
+  "match": "Av. Adolfo Ruiz Cortines 1419 — domicilio levantado no. 1419",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91020",
+   "via": "Ciclovía Adolfo Ruiz Cortines",
+   "direccion_osm": "Comité Directivo Estatal Partido Revolucionario Institucional, 1419, Ciclovía Adolfo Ruiz Cortines, Los Sauces, Venustiano Carranza, Obrero Campesina, Xalapa, Veracruz, 91020, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Orizaba 48, CP 91020",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.543782,
+  "lon": -96.929644,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Orizaba 48, Xalapa, Veracruz",
+  "ref": "way/887311021",
+  "match": "Av. Orizaba 48 — extremo levantado no. 94",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruz",
+   "cp": "91020",
+   "via": "Avenida Orizaba",
+   "direccion_osm": "Bristol Inglés Profesional, 94, Avenida Orizaba, Veracruz, Xalapa, Veracruz, 91020, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Américas 58, Col. del Maestro",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5423821,
+  "lon": -96.9250277,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Américas 58, Col. del Maestro, Xalapa, Veracruz",
+  "ref": "way/885610593",
+  "match": "Av. Américas 58 — domicilio levantado no. 44",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Colonia del Maestro",
+   "cp": "91030",
+   "via": "Avenida de las Américas",
+   "direccion_osm": "SIGAD, 44, Avenida de las Américas, Colonia del Maestro, Xalapa, Veracruz, 91030, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91030 vs 91020/91130 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Banamex sucursal Ávila Camacho",
+  "direccion": "Av. Ávila Camacho 243",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "privada",
+  "fuente": "direcciones.md",
+  "lat": 19.5380487,
+  "lon": -96.9287326,
+  "precision": "numero_interpolado",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Ávila Camacho 243, Xalapa, Veracruz",
+  "ref": "way/903571733",
+  "match": "Av. Ávila Camacho 243 — entre no. 236 y no. 284",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruz",
+   "cp": "91020",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "Centro de ayuda Nextel, Avenida Manuel Ávila Camacho, Veracruz, Xalapa, Veracruz, 91020, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Santander Smart",
+  "direccion": "Av. Ávila Camacho 298",
+  "zona": "AV. ÁVILA CAMACHO / AGUACATAL / MACUILTÉPETL (CP 91020–91130)",
+  "sector": "privada",
+  "fuente": "direcciones.md",
+  "lat": 19.5389886,
+  "lon": -96.9276869,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Ávila Camacho 298, Xalapa, Veracruz",
+  "ref": "way/882973122",
+  "match": "Av. Ávila Camacho 298 — domicilio levantado no. 284",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruz",
+   "cp": "91000",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "Simple 73, 284, Avenida Manuel Ávila Camacho, Veracruz, Xalapa, Veracruz, 91000, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91000 vs 91020/91130 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Torre Orgullo Veracruzano — Secretaría de Protección Civil",
+  "direccion": "Av. Lázaro Cárdenas 1104",
+  "zona": "COL. REVOLUCIÓN (CP 91100)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5142079,
+  "lon": -96.9178877,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/5067148240",
+  "match": "SECRETARIA DE PROTECCION CIVIL DE VERACRUZ",
+  "confianza": 0.79,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Universitaria",
+   "cp": "91093",
+   "via": "Andador Obreros Textiles",
+   "direccion_osm": "SECRETARIA DE PROTECCION CIVIL DE VERACRUZ, Andador Obreros Textiles, Zona Universitaria, Caminos, Xalapa, Veracruz, 91093, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91093 vs 91100 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Torre Orgullo Veracruzano — SEV, Dirección General de Primarias Estatales",
+  "direccion": "mismo edificio",
+  "zona": "COL. REVOLUCIÓN (CP 91100)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5142079,
+  "lon": -96.9178877,
+  "precision": "edificio_compartido",
+  "verificacion": "edificio_compartido",
+  "ref": "node/5067148240",
+  "match": "Torre Orgullo Veracruzano — Secretaría de Protección Civil",
+  "nota": "'mismo edificio': Torre Orgullo Veracruzano, Av. Lazaro Cardenas 1104",
+  "comparte_con": 43,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Zona Universitaria",
+   "cp": "91093",
+   "via": "Andador Obreros Textiles",
+   "direccion_osm": "SECRETARIA DE PROTECCION CIVIL DE VERACRUZ, Andador Obreros Textiles, Zona Universitaria, Caminos, Xalapa, Veracruz, 91093, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "mismo inmueble que #43 (Torre Orgullo Veracruzano — )",
+    "CP OSM 91093 vs 91100 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Torre Orgullo Veracruzano — Oficina de Prestaciones y Afiliación IMSS estatal",
+  "direccion": "Av. Lázaro Cárdenas 1104-B",
+  "zona": "COL. REVOLUCIÓN (CP 91100)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5085987,
+  "lon": -96.8681191,
+  "precision": "numero_cercano",
+  "verificacion": "osm_numeracion",
+  "consulta": "Av. Lázaro Cárdenas 1104-B, Xalapa, Veracruz",
+  "ref": "way/491649195",
+  "match": "Av. Lázaro Cárdenas 1104 — domicilio levantado no. 1181",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Villas El Olmo",
+   "cp": "91194",
+   "via": "Lázaro Cárdenas",
+   "direccion_osm": "Hotel Atenas, 1181, Lázaro Cárdenas, Villas El Olmo, Xalapa, Veracruz, 91194, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91194 vs 91100 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Secretaría de Educación y Cultura",
+  "direccion": "Ignacio Comonfort s/n",
+  "zona": "COL. REVOLUCIÓN (CP 91100)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5708451,
+  "lon": -96.91729,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Ignacio Comonfort s/n, Xalapa, Veracruz",
+  "ref": "way/341492626",
+  "match": "Calle Ignacio Comonfort, Revolución, Xalapa, Veracruz, 91110, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Revolución",
+   "cp": "91110",
+   "via": "Calle Ignacio Comonfort",
+   "direccion_osm": "Calle Ignacio Comonfort, Revolución, Xalapa, Veracruz, 91110, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91110 vs 91100 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Contraloría General del Estado",
+  "direccion": "C. Ignacio de la Llave 105",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5348259,
+  "lon": -96.9325792,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/4532584690",
+  "match": "Contraloria General del Estado",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruzana",
+   "cp": "91030",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "Contraloria General del Estado, 156, Avenida Manuel Ávila Camacho, Veracruzana, Xalapa, Veracruz, 91030, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91030 vs 91050/91070 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Dirección Gral. de Fiscalización Gubernamental (CGE)",
+  "direccion": "Ignacio de la Llave 105, 1er piso",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5269565,
+  "lon": -96.9339606,
+  "precision": "numero_exacto",
+  "verificacion": "osm_numeracion",
+  "consulta": "Ignacio de la Llave 105, Xalapa, Veracruz",
+  "ref": "way/144182840",
+  "match": "Ignacio de la Llave 105 — domicilio levantado no. 105",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91050",
+   "via": "Calle Los Naranjos",
+   "direccion_osm": "Manos Veracruzanas, 105, Calle Los Naranjos, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91050, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Dirección Gral. de Responsabilidades Administrativas (CGE)",
+  "direccion": "Ignacio de la Llave 105, 1er piso",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5269565,
+  "lon": -96.9339606,
+  "precision": "numero_exacto",
+  "verificacion": "osm_numeracion",
+  "consulta": "Ignacio de la Llave 105, Xalapa, Veracruz",
+  "ref": "way/144182840",
+  "match": "Ignacio de la Llave 105 — domicilio levantado no. 105",
+  "confianza": null,
+  "comparte_con": 48,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91050",
+   "via": "Calle Los Naranjos",
+   "direccion_osm": "Manos Veracruzanas, 105, Calle Los Naranjos, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91050, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "mismo inmueble que #48 (Dirección Gral. de Fiscaliza)"
+   ]
+  }
+ },
+ {
+  "nombre": "Dirección Gral. de Transparencia y Datos Personales (CGE)",
+  "direccion": "Ignacio de la Llave 105",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5269565,
+  "lon": -96.9339606,
+  "precision": "numero_exacto",
+  "verificacion": "osm_numeracion",
+  "consulta": "Ignacio de la Llave 105, Xalapa, Veracruz",
+  "ref": "way/144182840",
+  "match": "Ignacio de la Llave 105 — domicilio levantado no. 105",
+  "confianza": null,
+  "comparte_con": 48,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91050",
+   "via": "Calle Los Naranjos",
+   "direccion_osm": "Manos Veracruzanas, 105, Calle Los Naranjos, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91050, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "mismo inmueble que #48 (Dirección Gral. de Fiscaliza)"
+   ]
+  }
+ },
+ {
+  "nombre": "Órgano Interno de Control (CGE)",
+  "direccion": "Col. Tamborrel, CP 91050",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5348259,
+  "lon": -96.9325792,
+  "precision": "edificio_compartido",
+  "verificacion": "edificio_compartido",
+  "ref": "node/4532584690",
+  "match": "Contraloría General del Estado",
+  "nota": "OIC de la Contraloria General, mismo inmueble de Ignacio de la Llave 105",
+  "comparte_con": 47,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Veracruzana",
+   "cp": "91030",
+   "via": "Avenida Manuel Ávila Camacho",
+   "direccion_osm": "Contraloria General del Estado, 156, Avenida Manuel Ávila Camacho, Veracruzana, Xalapa, Veracruz, 91030, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "mismo inmueble que #47 (Contraloría General del Esta)",
+    "CP OSM 91030 vs 91050/91070 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "INVIVIENDA",
+  "direccion": "Cuauhpopoca 11, Col. Salud",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.526722,
+  "lon": -96.932762,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Cuauhpopoca 11, Xalapa, Veracruz",
+  "ref": "way/107219311",
+  "match": "Cuauhpopoca, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91050, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91050",
+   "via": "Cuauhpopoca",
+   "direccion_osm": "Cuauhpopoca, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91050, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "DIF Estatal Veracruz",
+  "direccion": "Km 1.5 Carretera Xalapa–Coatepec, Col. Benito Juárez",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5108879,
+  "lon": -96.9305404,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/331525699",
+  "match": "DIF Estatal Veracruz",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Buena Vista II",
+   "cp": "91090",
+   "via": "Circuito Presidentes",
+   "direccion_osm": "DIF Estatal Veracruz, Circuito Presidentes, Buena Vista II, Xalapa, Veracruz, 91090, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91090 vs 91050/91070 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Procuraduría Estatal de Protección al Medio Ambiente",
+  "direccion": "Av. Paseo de las Flores s/n",
+  "zona": "COL. SALUD / TAMBORREL (CP 91050–91070)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5269545,
+  "lon": -96.9097438,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/2938249754",
+  "match": "Procuraduría Estatal de Protección al Medio Ambiente",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Modelo",
+   "cp": "91040",
+   "via": "Avenida 20 de Noviembre",
+   "direccion_osm": "Procuraduría Estatal de Protección al Medio Ambiente, Avenida 20 de Noviembre, Modelo, Xalapa, Veracruz, 91040, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91040 vs 91050/91070 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Registro Público de la Propiedad y del Comercio",
+  "direccion": "Apolinar Castillo 5, Los Ángeles",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5187301,
+  "lon": -96.9225182,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/401230405",
+  "match": "Registro Público de la Propiedad",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Venustiano Carranza",
+   "cp": "91090",
+   "via": "Calle Venustiano Carranza",
+   "direccion_osm": "Registro Público de la Propiedad, Calle Venustiano Carranza, Venustiano Carranza, Felipe Carrillo Puerto, Xalapa, Veracruz, 91090, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91090 vs 91060/91190 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "SIOP (Infraestructura y Obras Públicas)",
+  "direccion": "Coronel Pablo Frutis 4, Col. Badillo",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5299056,
+  "lon": -96.8980745,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Coronel Pablo Frutis 4, Xalapa, Veracruz",
+  "ref": "way/859353935",
+  "match": "Calle Coronel Pablo Frutis, Atenas, Xalapa, Veracruz, 91065, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Atenas",
+   "cp": "91065",
+   "via": "Calle Coronel Pablo Frutis",
+   "direccion_osm": "Colegio Americano, 22, Calle Coronel Pablo Frutis, Atenas, Xalapa, Veracruz, 91065, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91065 vs 91060/91190 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Secretaría de Educación y Cultura (Araucarias)",
+  "direccion": "Av. Araucarias 5, Col. Inmecafé",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5274784,
+  "lon": -96.886165,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Av. Araucarias 5, Xalapa, Veracruz",
+  "ref": "way/892467980",
+  "match": "Calle Paseo de las Araucarias, Jardines de Las Ánimas, Xalapa, Veracruz, 91190, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Jardines de Las Ánimas",
+   "cp": "91190",
+   "via": "Calle Paseo de las Araucarias",
+   "direccion_osm": "Calle Paseo de las Araucarias, Jardines de Las Ánimas, Xalapa, Veracruz, 91190, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. Araucarias 3, piso 1, Col. Badillo",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5274784,
+  "lon": -96.886165,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Av. Araucarias 3, Xalapa, Veracruz",
+  "ref": "way/892467980",
+  "match": "Calle Paseo de las Araucarias, Jardines de Las Ánimas, Xalapa, Veracruz, 91190, México",
+  "confianza": null,
+  "comparte_con": 57,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Jardines de Las Ánimas",
+   "cp": "91190",
+   "via": "Calle Paseo de las Araucarias",
+   "direccion_osm": "Calle Paseo de las Araucarias, Jardines de Las Ánimas, Xalapa, Veracruz, 91190, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "mismo inmueble que #57 (Secretaría de Educación y Cu)"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Av. 20 de Noviembre Oriente 374, CP 91064",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5408338,
+  "lon": -96.9146374,
+  "precision": "aproximada",
+  "verificacion": "nominatim",
+  "consulta": "Av. 20, Xalapa, Veracruz",
+  "ref": "node/959618169",
+  "match": "Xalapa, Veracruz, 91170, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Unidad Habitacional Francisco Sarabia",
+   "cp": "91133",
+   "via": "Calle Volcán de Colima",
+   "direccion_osm": "Calle Volcán de Colima, Unidad Habitacional Francisco Sarabia, Xalapa, Veracruz, 91133, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91133 vs 91060/91064/91190 declarado",
+    "ubicacion a nivel aproximada"
+   ]
+  }
+ },
+ {
+  "nombre": "Mosaico Working Center",
+  "direccion": "Gral. Adalberto Tejeda 25, Col. Pumar",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "privada",
+  "fuente": "direcciones.md",
+  "lat": 19.5297469,
+  "lon": -96.911208,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/6448423276",
+  "match": "Mosaico Working Center",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Modelo",
+   "cp": "91040",
+   "via": "Calle General Adalberto Tejeda",
+   "direccion_osm": "Mosaico Working Center, 10, Calle General Adalberto Tejeda, Modelo, Xalapa, Veracruz, 91040, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91040 vs 91060/91190 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Torre \"O\"",
+  "direccion": "Isaías A. Rodríguez Vivas 6-A, Sipeh Ánimas",
+  "zona": "LOS ÁNGELES / PUMAR / BADILLO / INMECAFÉ (CP 91060–91190)",
+  "sector": "privada",
+  "fuente": "direcciones.md",
+  "lat": 19.5105085,
+  "lon": -96.8638081,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Torre \"O\", Xalapa, Veracruz",
+  "ref": "way/345813161",
+  "match": "Privada Torre de Oro, Fraccionamiento La Giralda, Villas El Olmo, Xalapa, Veracruz, 91194, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Fraccionamiento La Giralda",
+   "cp": "91194",
+   "via": "Privada Torre de Oro",
+   "direccion_osm": "Privada Torre de Oro, Fraccionamiento La Giralda, Villas El Olmo, Xalapa, Veracruz, 91194, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91194 vs 91060/91190 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "SEV — Secretaría de Educación de Veracruz",
+  "direccion": "Km 4.5 Carretera Xalapa–Veracruz, Rubí Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5238719,
+  "lon": -96.9219311,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "node/2308470912",
+  "match": "Secretaría de Educación de Veracruz",
+  "confianza": 0.84,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Venustiano Carranza",
+   "cp": "91000",
+   "via": "Calle Sebastián Camacho",
+   "direccion_osm": "Secretaría de Educación de Veracruz, 59, Calle Sebastián Camacho, Venustiano Carranza, Felipe Carrillo Puerto, Xalapa, Veracruz, 91000, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91000 vs 91096/91198 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Km 4.5 Carretera Xalapa–Veracruz, Col. SAHOP",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5238719,
+  "lon": -96.9219311,
+  "precision": "edificio_compartido",
+  "verificacion": "edificio_compartido",
+  "consulta": "Km 4, Xalapa, Veracruz",
+  "ref": "node/2308470912",
+  "match": "SEV — Secretaría de Educación de Veracruz",
+  "confianza": null,
+  "nota": "Col. SAHOP esta en el Km 4.5 de la carretera Xalapa-Veracruz, sede de la SEV",
+  "comparte_con": 62,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Venustiano Carranza",
+   "cp": "91000",
+   "via": "Calle Sebastián Camacho",
+   "direccion_osm": "Secretaría de Educación de Veracruz, 59, Calle Sebastián Camacho, Venustiano Carranza, Felipe Carrillo Puerto, Xalapa, Veracruz, 91000, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "mismo inmueble que #62 (SEV — Secretaría de Educació)",
+    "CP OSM 91000 vs 91096/91198 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "ORFIS (Órgano de Fiscalización Superior)",
+  "direccion": "Carr. Xalapa–Veracruz 1102",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5096176,
+  "lon": -96.8732971,
+  "precision": "poi_exacto",
+  "verificacion": "nominatim",
+  "ref": "way/345402314",
+  "match": "ORFIS, Avenida Arco Sur, Moctezuma, Xalapa, Veracruz, 91194, México",
+  "nota": "POI 'ORFIS' en OSM; orfis.gob.mx declara Carr. Xalapa-Veracruz 1102 esq. Blvd. Culturas Veracruzanas, CP 91096",
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Moctezuma",
+   "cp": "91194",
+   "via": "Avenida Arco Sur",
+   "direccion_osm": "ORFIS, Avenida Arco Sur, Moctezuma, Xalapa, Veracruz, 91194, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91194 vs 91096/91198 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Fiscalía General del Estado (sede principal)",
+  "direccion": "Circuito Guízar y Valencia 707, Reserva Territorial",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5086983,
+  "lon": -96.875163,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/345402330",
+  "match": "Fiscalía General del Estado",
+  "confianza": 1.0,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Nueva Herradura",
+   "cp": "91096",
+   "via": "Avenida Arco Sur",
+   "direccion_osm": "Fiscalía General del Estado, Avenida Arco Sur, Nueva Herradura, Xalapa, Veracruz, 91096, México",
+   "estado": "ok",
+   "errores": [],
+   "avisos": []
+  }
+ },
+ {
+  "nombre": "Secretaría Ejecutiva del Consejo Estatal de Seguridad Pública",
+  "direccion": "Guízar y Valencia / Av. Murillo Vidal",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.4982661,
+  "lon": -96.8795016,
+  "precision": "colonia",
+  "verificacion": "nominatim",
+  "ref": "node/3677079162",
+  "match": "Reserva Territorial, Xalapa, Veracruz, 91096, México",
+  "nota": "cespver.gob.mx: Blvd. Rafael Guizar y Valencia s/n, Col. Reserva Territorial; el circuito no esta cartografiado",
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Reserva Territorial",
+   "cp": "91096",
+   "via": "Calle Girasol",
+   "direccion_osm": "Calle Girasol, Reserva Territorial, Xalapa, Veracruz, 91096, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "ubicacion a nivel colonia"
+   ]
+  }
+ },
+ {
+  "nombre": "Subdelegación IMSS Xalapa",
+  "direccion": "Circuito Guízar y Valencia 1, Col. Xalapa 2000",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5257943,
+  "lon": -96.9331934,
+  "precision": "poi_exacto",
+  "verificacion": "osm_poi",
+  "ref": "way/145473926",
+  "match": "IMSS UMF No. 66 Xalapa",
+  "confianza": 0.79,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Los Sauces",
+   "cp": "91056",
+   "via": "Calle Lucio García Ochoa",
+   "direccion_osm": "Consultorios, Calle Lucio García Ochoa, Los Sauces, Venustiano Carranza, Belisario Domínguez, Xalapa, Veracruz, 91056, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91056 vs 91096/91198 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Secretaría de Desarrollo Social del Estado",
+  "direccion": "Av. Vista Hermosa 7, Torre Unión piso 2, Rubí Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5173282,
+  "lon": -96.8803323,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Av. Vista Hermosa 7, Xalapa, Veracruz",
+  "ref": "way/146690078",
+  "match": "Boulevard Vista Hermosa, Loma Esmeralda Ánimas, Xalapa, Veracruz, 91193, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Loma Esmeralda Ánimas",
+   "cp": "91193",
+   "via": "Boulevard Vista Hermosa",
+   "direccion_osm": "Boulevard Vista Hermosa, Loma Esmeralda Ánimas, Xalapa, Veracruz, 91193, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91193 vs 91096/91198 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Secretaría de Bienestar (federal)",
+  "direccion": "Carr. Xalapa–Veracruz Km 0+700, Indeco Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5328596,
+  "lon": -96.8910715,
+  "precision": "colonia",
+  "verificacion": "nominatim",
+  "ref": "node/4151278071",
+  "match": "Indeco Ánimas, Xalapa, Veracruz, 91190, México",
+  "nota": "bienestar.gob.mx: Carr. Xalapa-Veracruz Km 0+700, Col. Indeco Animas, CP 91196",
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Fraccionamiento Los Reyes",
+   "cp": "91190",
+   "via": "Calle José Rolon",
+   "direccion_osm": "Calle José Rolon, Fraccionamiento Los Reyes, Indeco Ánimas, Xalapa, Veracruz, 91190, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91190 vs 91096/91198 declarado",
+    "ubicacion a nivel colonia"
+   ]
+  }
+ },
+ {
+  "nombre": "Torre Ánimas",
+  "direccion": "Blvd. Cristóbal Colón 5, Rubí Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "mixta",
+  "fuente": "direcciones.md",
+  "lat": 19.5156806,
+  "lon": -96.8779713,
+  "precision": "aproximada",
+  "verificacion": "nominatim",
+  "consulta": "Torre Ánimas, Xalapa, Veracruz",
+  "ref": "way/223615087",
+  "match": "Torre Ánimas, Calle Cristóbal Colón, Loma Esmeralda Ánimas, Xalapa, Veracruz, 91193, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Loma Esmeralda Ánimas",
+   "cp": "91193",
+   "via": "Calle Cristóbal Colón",
+   "direccion_osm": "Calle Cristóbal Colón, Loma Esmeralda Ánimas, Xalapa, Veracruz, 91193, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91193 vs 91096/91198 declarado",
+    "ubicacion a nivel aproximada"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal en Torre Ánimas",
+  "direccion": "Blvd. Cristóbal Colón 5-1414",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5165291,
+  "lon": -96.8782337,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Blvd. Cristóbal Colón 5-1414, Xalapa, Veracruz",
+  "ref": "way/146689992",
+  "match": "Calle Boulevard Cristóbal Colón, Loma Esmeralda Ánimas, Xalapa, Veracruz, 91193, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Loma Esmeralda Ánimas",
+   "cp": "91193",
+   "via": "Calle Boulevard Cristóbal Colón",
+   "direccion_osm": "Calle Boulevard Cristóbal Colón, Loma Esmeralda Ánimas, Xalapa, Veracruz, 91193, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91193 vs 91096/91198 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Dependencia estatal",
+  "direccion": "Blvd. Cristóbal Colón 5-1406, Jardines de las Ánimas",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5165291,
+  "lon": -96.8782337,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Blvd. Cristóbal Colón 5, Xalapa, Veracruz",
+  "ref": "way/146689992",
+  "match": "Calle Boulevard Cristóbal Colón, Loma Esmeralda Ánimas, Xalapa, Veracruz, 91193, México",
+  "confianza": null,
+  "comparte_con": 71,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Loma Esmeralda Ánimas",
+   "cp": "91193",
+   "via": "Calle Boulevard Cristóbal Colón",
+   "direccion_osm": "Calle Boulevard Cristóbal Colón, Loma Esmeralda Ánimas, Xalapa, Veracruz, 91193, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "mismo inmueble que #71 (Dependencia estatal en Torre)",
+    "CP OSM 91193 vs 91096/91198 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Torre Corporativa Olmo (pisos 6 y 7)",
+  "direccion": "Distribuidor Vial 1009, Reserva Territorial",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5092075,
+  "lon": -96.8718994,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Distribuidor Vial 1009, Xalapa, Veracruz",
+  "ref": "way/304930152",
+  "match": "Distribuidor Vial, Olmos de las Ánimas, Xalapa, Veracruz, 91194, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Olmos de las Ánimas",
+   "cp": "91194",
+   "via": "Distribuidor Vial",
+   "direccion_osm": "Distribuidor Vial, Olmos de las Ánimas, Xalapa, Veracruz, 91194, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91194 vs 91096/91198 declarado"
+   ]
+  }
+ },
+ {
+  "nombre": "Torre Centro Mayor / Torre JV",
+  "direccion": "Principal 4, Col. Pastoresa",
+  "zona": "LAS ÁNIMAS / RESERVA TERRITORIAL (CP 91096–91198)",
+  "sector": "publica",
+  "fuente": "direcciones.md",
+  "lat": 19.5411595,
+  "lon": -96.9001395,
+  "precision": "calle",
+  "verificacion": "nominatim",
+  "consulta": "Principal 4, Xalapa, Veracruz",
+  "ref": "way/341488406",
+  "match": "Principal, Orquídeas, Xalapa, Veracruz, 91174, México",
+  "confianza": null,
+  "control": {
+   "municipio": "Xalapa",
+   "colonia": "Orquídeas",
+   "cp": "91174",
+   "via": "Principal",
+   "direccion_osm": "Principal, Orquídeas, Xalapa, Veracruz, 91174, México",
+   "estado": "aviso",
+   "errores": [],
+   "avisos": [
+    "CP OSM 91174 vs 91096/91198 declarado"
+   ]
+  }
+ }
+]

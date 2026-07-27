@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa de direcciones · Xalapa, Veracruz</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<style>
+:root{
+  --bg:#0f1720; --panel:#16212e; --panel2:#1d2b3a; --line:#2b3d50;
+  --tx:#e7eef6; --tx2:#9fb3c8; --acc:#4da3ff;
+  --publica:#3ea6ff; --privada:#ff8a3d; --mixta:#b07bff; --nd:#7f8c9b;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font:14px/1.45 system-ui,Segoe UI,Roboto,sans-serif;
+  background:var(--bg);color:var(--tx)}
+#app{display:grid;grid-template-columns:330px 1fr;grid-template-rows:auto 1fr;height:100%}
+header{grid-column:1/-1;display:flex;align-items:center;gap:16px;padding:10px 16px;
+  background:var(--panel);border-bottom:1px solid var(--line)}
+header h1{font-size:16px;margin:0;font-weight:650}
+header .sub{color:var(--tx2);font-size:12px}
+header .chips{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.chip{background:var(--panel2);border:1px solid var(--line);border-radius:999px;
+  padding:3px 10px;font-size:12px;color:var(--tx2)}
+.chip b{color:var(--tx)}
+
+aside{background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;padding:12px}
+aside section{margin-bottom:16px}
+aside h2{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--tx2);
+  margin:0 0 8px;font-weight:700}
+input[type=search],select,input[type=text]{width:100%;padding:7px 9px;border-radius:7px;
+  border:1px solid var(--line);background:var(--panel2);color:var(--tx);font-size:13px}
+label.row{display:flex;align-items:center;gap:8px;padding:3px 0;cursor:pointer;font-size:13px}
+label.row input{accent-color:var(--acc);cursor:pointer}
+label.row .n{margin-left:auto;color:var(--tx2);font-size:11px;font-variant-numeric:tabular-nums}
+.dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto}
+.slider{display:flex;align-items:center;gap:8px}
+.slider input{flex:1}
+button{background:var(--panel2);color:var(--tx);border:1px solid var(--line);
+  border-radius:7px;padding:7px 10px;font-size:13px;cursor:pointer;width:100%}
+button:hover{border-color:var(--acc)}
+button.on{background:var(--acc);border-color:var(--acc);color:#04121f;font-weight:600}
+.btns{display:flex;gap:6px}
+/* el mapa se ancla al contenedor: si midiera 0 de alto, Leaflet calcularia
+   mal el encuadre inicial y no dibujaria ningun marcador */
+main{position:relative;min-width:0;min-height:0;overflow:hidden}
+#map{position:absolute;top:0;right:0;bottom:0;left:0}
+
+#panel{position:absolute;right:12px;top:12px;width:330px;max-height:calc(100% - 24px);
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  display:none;flex-direction:column;z-index:1000;box-shadow:0 10px 30px #0008}
+#panel.open{display:flex}
+#panel .hd{padding:10px 12px;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:flex-start}
+#panel .hd h3{margin:0;font-size:14px;flex:1}
+#panel .bd{padding:10px 12px;overflow-y:auto}
+#panel .x{background:none;border:none;color:var(--tx2);width:auto;padding:0;font-size:18px;line-height:1}
+dl{margin:0;display:grid;grid-template-columns:88px 1fr;gap:4px 8px;font-size:12.5px}
+dt{color:var(--tx2)}
+dd{margin:0;word-break:break-word}
+.tag{display:inline-block;padding:1px 7px;border-radius:5px;font-size:11px;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th,td{text-align:left;padding:5px 6px;border-bottom:1px solid var(--line)}
+th{color:var(--tx2);font-weight:600;position:sticky;top:0;background:var(--panel);cursor:pointer}
+td.num{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--panel2)}
+#tablaWrap{position:absolute;left:12px;bottom:12px;width:min(680px,calc(100% - 380px));
+  max-height:44%;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  display:none;flex-direction:column;z-index:1000;box-shadow:0 10px 30px #0008}
+#tablaWrap.open{display:flex}
+#tablaWrap .hd{padding:8px 12px;border-bottom:1px solid var(--line);display:flex;
+  align-items:center;gap:8px}
+#tablaWrap .hd h3{margin:0;font-size:13px;flex:1}
+#tablaWrap .hd button{width:auto;padding:4px 9px;font-size:12px}
+#tablaBody{overflow:auto}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--panel);color:var(--tx)}
+.leaflet-popup-content{margin:10px 12px;font-size:12.5px}
+.leyenda{background:var(--panel);padding:8px 10px;border-radius:8px;border:1px solid var(--line);
+  font-size:12px;line-height:1.7}
+.leyenda i{width:11px;height:11px;border-radius:50%;display:inline-block;margin-right:6px}
+.aviso{font-size:11.5px;color:var(--tx2);background:var(--panel2);border:1px solid var(--line);
+  border-radius:7px;padding:8px;line-height:1.5}
+.marca{border-radius:50%;border:2px solid #0b1520;box-shadow:0 0 0 1px #ffffff33}
+.origen{filter:drop-shadow(0 0 6px var(--acc))}
+@media(max-width:980px){
+  #app{grid-template-columns:1fr;grid-template-rows:auto auto 1fr}
+  aside{max-height:38vh}
+  #panel,#tablaWrap{width:calc(100% - 24px)}
+  #tablaWrap{width:calc(100% - 24px)}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div>
+      <h1>Direcciones de Xalapa, Veracruz</h1>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="chips" id="chips"></div>
+  </header>
+
+  <aside>
+    <section>
+      <h2>Buscar</h2>
+      <input type="search" id="q" placeholder="nombre, dirección o colonia…" autocomplete="off">
+    </section>
+
+    <section>
+      <h2>Tipo de oficina</h2>
+      <div id="fSector"></div>
+    </section>
+
+    <section>
+      <h2>Categoría</h2>
+      <div id="fCategoria"></div>
+    </section>
+
+    <section>
+      <h2>Origen del dato</h2>
+      <div id="fFuente"></div>
+    </section>
+
+    <section>
+      <h2>Precisión mínima</h2>
+      <select id="fPrecision">
+        <option value="0">Cualquiera</option>
+        <option value="1">Nivel colonia o mejor</option>
+        <option value="2">Nivel calle o mejor</option>
+        <option value="3">Sólo número exacto o POI localizado</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Radio desde el punto de origen</h2>
+      <div class="slider">
+        <input type="range" id="fRadio" min="0" max="8000" step="100" value="0">
+        <span id="lblRadio" style="min-width:66px;text-align:right">apagado</span>
+      </div>
+      <div class="aviso" style="margin-top:8px" id="infoOrigen">
+        Haz clic en cualquier punto y pulsa <b>Fijar como origen</b> para medir
+        distancias y filtrar por radio.
+      </div>
+    </section>
+
+    <section>
+      <h2>Capas</h2>
+      <label class="row"><input type="checkbox" id="cAgrupar" checked> Agrupar por concentración</label>
+      <label class="row"><input type="checkbox" id="cCalor"> Mapa de calor (densidad)</label>
+      <label class="row"><input type="checkbox" id="cZonas"> Zonas habitacionales</label>
+      <label class="row"><input type="checkbox" id="cColonias"> Colonias</label>
+      <label class="row"><input type="checkbox" id="cLimite"> Límite municipal</label>
+    </section>
+
+    <section>
+      <h2>Herramientas</h2>
+      <div class="btns" style="margin-bottom:6px">
+        <button id="bMedir">Medir A→B</button>
+        <button id="bTabla">Ver tabla</button>
+      </div>
+      <div class="btns" style="margin-bottom:6px">
+        <button id="bCsv">Exportar CSV</button>
+        <button id="bReset">Limpiar</button>
+      </div>
+      <button id="bMatriz">Matriz de distancias</button>
+    </section>
+
+    <section>
+      <h2>Densidad</h2>
+      <div id="densidad"></div>
+    </section>
+
+    <section>
+      <h2>Procedencia</h2>
+      <div class="aviso" id="procedencia"></div>
+    </section>
+  </aside>
+
+  <main>
+    <div id="map"></div>
+    <div id="panel">
+      <div class="hd">
+        <h3 id="pTitulo"></h3>
+        <button class="x" id="pCerrar">×</button>
+      </div>
+      <div class="bd" id="pCuerpo"></div>
+    </div>
+    <div id="tablaWrap">
+      <div class="hd">
+        <h3 id="tablaTitulo">Direcciones</h3>
+        <button id="bCsv2">CSV</button>
+        <button id="tablaCerrar">Cerrar</button>
+      </div>
+      <div id="tablaBody"></div>
+    </div>
+  </main>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script id="datos" type="application/json">/*__DATOS__*/</script>
+<script>
+"use strict";
+const DATOS = JSON.parse(document.getElementById("datos").textContent);
+const PUNTOS = DATOS.puntos, META = DATOS.meta;
+
+/* ---------------------------------------------------------------- utilidades */
+const COLOR = {publica:"#3ea6ff", privada:"#ff8a3d", mixta:"#b07bff", no_determinado:"#7f8c9b"};
+const ETIQ_SECTOR = {publica:"Pública", privada:"Privada", mixta:"Mixta", no_determinado:"Sin determinar"};
+const ETIQ_CAT = {gobierno:"Gobierno", justicia:"Justicia", seguridad:"Seguridad",
+  salud:"Salud", educacion:"Educación", financiero:"Financiero", servicios:"Servicios"};
+// jerarquia de precision: cuanto mayor, mas fina la ubicacion
+const NIVEL = {sin_coordenada:0, aproximada:1, colonia:1, calle:2, cruce_calles:2,
+  numero_cercano:2, edificio_compartido:3, numero_interpolado:3, numero_exacto:3, poi_exacto:3};
+const ETIQ_PREC = {
+  poi_exacto:"inmueble localizado en OSM",
+  numero_exacto:"número oficial levantado en campo",
+  numero_interpolado:"interpolado entre números levantados",
+  numero_cercano:"número más cercano levantado",
+  edificio_compartido:"mismo inmueble que otra oficina",
+  cruce_calles:"cruce de vialidades",
+  calle:"nivel de vialidad",
+  colonia:"nivel de colonia",
+  aproximada:"aproximada"
+};
+
+function hav(a,b,c,d){
+  const R=6371000, r=Math.PI/180;
+  const p1=a*r, p2=c*r, dp=(c-a)*r, dl=(d-b)*r;
+  const x=Math.sin(dp/2)**2+Math.cos(p1)*Math.cos(p2)*Math.sin(dl/2)**2;
+  return 2*R*Math.asin(Math.min(1,Math.sqrt(x)));
+}
+const fmtD = m => m<1000 ? Math.round(m)+" m" : (m/1000).toFixed(2)+" km";
+const esc = s => String(s??"").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const norm = s => String(s??"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+
+/* ------------------------------------------------------------------- el mapa */
+const map = L.map("map", {zoomControl:true, preferCanvas:true, minZoom:10})
+  .setView([19.532,-96.917], 13);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom:19, attribution:'&copy; colaboradores de <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+const capaZonas    = L.layerGroup();
+const capaColonias = L.layerGroup();
+const capaLimite   = L.layerGroup();
+const capaMedicion = L.layerGroup().addTo(map);
+const capaRadio    = L.layerGroup().addTo(map);
+let capaPuntos = null, capaCalor = null;
+
+/* zonas habitacionales reales (landuse=residential de OSM) */
+DATOS.zonas.forEach(z=>{
+  L.polygon(z.poligono, {color:"#39d98a", weight:1, fillOpacity:.13, fillColor:"#39d98a"})
+   .bindPopup(`<b>${esc(z.nombre)}</b><br>Zona habitacional · ${z.area_ha} ha<br>
+     <span style="color:#9fb3c8">${esc(z.ref)}</span>`)
+   .addTo(capaZonas);
+});
+DATOS.colonias.forEach(c=>{
+  const txt = `<b>${esc(c.nombre)}</b><br>${esc(c.tipo||"colonia")}<br>
+    Puntos registrados: ${c.puntos}` + (c.poblacion?`<br>Población: ${c.poblacion.toLocaleString("es-MX")}`:"");
+  if(c.poligono){
+    L.polygon(c.poligono,{color:"#ffd166",weight:1,fillOpacity:.06,fillColor:"#ffd166"})
+     .bindPopup(txt).addTo(capaColonias);
+  } else {
+    L.circleMarker([c.lat,c.lon],{radius:4,color:"#ffd166",weight:2,fillOpacity:.7})
+     .bindPopup(txt).addTo(capaColonias);
+  }
+});
+if(DATOS.limite){
+  L.polygon(DATOS.limite,{color:"#4da3ff",weight:2,fill:false,dashArray:"6 5"}).addTo(capaLimite);
+}
+
+/* ------------------------------------------------------------------- filtros */
+const estado = {q:"", sector:new Set(), categoria:new Set(), fuente:new Set(),
+                nivel:0, radio:0, origen:null, medir:false, medirA:null,
+                orden:"nombre", asc:true};
+
+function construirFiltro(cont, campo, valores, etiquetas, colores){
+  cont.innerHTML = "";
+  valores.forEach(v=>{
+    estado[campo].add(v);
+    const n = PUNTOS.filter(p=>p[campo]===v).length;
+    const l = document.createElement("label");
+    l.className = "row";
+    l.innerHTML = `<input type="checkbox" checked data-v="${esc(v)}">` +
+      (colores?`<span class="dot" style="background:${colores[v]||"#7f8c9b"}"></span>`:"") +
+      `<span>${esc((etiquetas&&etiquetas[v])||v)}</span><span class="n">${n}</span>`;
+    l.querySelector("input").addEventListener("change", e=>{
+      e.target.checked ? estado[campo].add(v) : estado[campo].delete(v);
+      redibujar();
+    });
+    cont.appendChild(l);
+  });
+}
+const unicos = c => [...new Set(PUNTOS.map(p=>p[c]))].sort();
+construirFiltro(document.getElementById("fSector"), "sector", unicos("sector"), ETIQ_SECTOR, COLOR);
+construirFiltro(document.getElementById("fCategoria"), "categoria", unicos("categoria"), ETIQ_CAT, null);
+construirFiltro(document.getElementById("fFuente"), "fuente", unicos("fuente"), null, null);
+
+function visibles(){
+  const q = norm(estado.q);
+  return PUNTOS.filter(p=>{
+    if(!estado.sector.has(p.sector)) return false;
+    if(!estado.categoria.has(p.categoria)) return false;
+    if(!estado.fuente.has(p.fuente)) return false;
+    if((NIVEL[p.precision]??0) < estado.nivel) return false;
+    if(q && !norm(p.nombre+" "+p.direccion+" "+p.colonia+" "+p.cp+" "+p.zona).includes(q)) return false;
+    if(estado.radio>0 && estado.origen){
+      if(hav(estado.origen.lat,estado.origen.lon,p.lat,p.lon) > estado.radio) return false;
+    }
+    return true;
+  });
+}
+
+/* ------------------------------------------------------------------ marcadores */
+function icono(p){
+  const c = COLOR[p.sector]||"#7f8c9b";
+  const esOrigen = estado.origen && estado.origen.id===p.id;
+  const t = esOrigen?16:11;
+  return L.divIcon({className:"", iconSize:[t,t], iconAnchor:[t/2,t/2],
+    html:`<div class="marca ${esOrigen?"origen":""}" style="width:${t}px;height:${t}px;background:${c}"></div>`});
+}
+
+function redibujar(){
+  const vis = visibles();
+
+  if(capaPuntos){ map.removeLayer(capaPuntos); capaPuntos=null; }
+  const agrupar = document.getElementById("cAgrupar").checked;
+  capaPuntos = agrupar
+    ? L.markerClusterGroup({showCoverageOnHover:false, maxClusterRadius:45, chunkedLoading:true})
+    : L.layerGroup();
+  vis.forEach(p=>{
+    const m = L.marker([p.lat,p.lon],{icon:icono(p), title:p.nombre});
+    m.on("click", ()=>abrirPanel(p));
+    capaPuntos.addLayer(m);
+  });
+  map.addLayer(capaPuntos);
+
+  if(capaCalor){ map.removeLayer(capaCalor); capaCalor=null; }
+  if(document.getElementById("cCalor").checked){
+    capaCalor = L.heatLayer(vis.map(p=>[p.lat,p.lon,1]),
+      {radius:26, blur:20, maxZoom:16,
+       gradient:{0.2:"#1b3b6f",0.45:"#2d9cdb",0.7:"#f2c94c",1:"#eb5757"}});
+    map.addLayer(capaCalor);
+  }
+
+  dibujarRadio();
+  actualizarChips(vis);
+  actualizarDensidad(vis);
+  if(document.getElementById("tablaWrap").classList.contains("open")) pintarTabla(vis);
+}
+
+function dibujarRadio(){
+  capaRadio.clearLayers();
+  if(estado.origen && estado.radio>0){
+    L.circle([estado.origen.lat,estado.origen.lon],
+      {radius:estado.radio, color:"#4da3ff", weight:1.5, fillColor:"#4da3ff", fillOpacity:.06})
+      .addTo(capaRadio);
+  }
+}
+
+function actualizarChips(vis){
+  const c = {};
+  vis.forEach(p=>{ c[p.sector]=(c[p.sector]||0)+1; });
+  document.getElementById("chips").innerHTML =
+    `<span class="chip"><b>${vis.length}</b> de ${PUNTOS.length} visibles</span>` +
+    Object.keys(c).sort().map(k=>
+      `<span class="chip"><span class="dot" style="display:inline-block;background:${COLOR[k]}"></span>
+       ${ETIQ_SECTOR[k]||k}: <b>${c[k]}</b></span>`).join("");
+}
+
+/* ---------------------------------------------------------- panel de un punto */
+function abrirPanel(p){
+  const pan = document.getElementById("panel");
+  document.getElementById("pTitulo").textContent = p.nombre;
+  const cercanos = PUNTOS.filter(o=>o.id!==p.id)
+    .map(o=>({o, d:hav(p.lat,p.lon,o.lat,o.lon)}))
+    .sort((a,b)=>a.d-b.d).slice(0,8);
+  const dOrigen = estado.origen && estado.origen.id!==p.id
+    ? `<dt>Al origen</dt><dd><b>${fmtD(hav(estado.origen.lat,estado.origen.lon,p.lat,p.lon))}</b>
+       <span style="color:#9fb3c8">desde ${esc(estado.origen.nombre)}</span></dd>` : "";
+
+  document.getElementById("pCuerpo").innerHTML = `
+    <dl>
+      <dt>Dirección</dt><dd>${esc(p.direccion)}</dd>
+      ${p.colonia?`<dt>Colonia</dt><dd>${esc(p.colonia)}</dd>`:""}
+      ${p.cp?`<dt>C.P.</dt><dd>${esc(p.cp)}</dd>`:""}
+      <dt>Tipo</dt><dd><span class="tag" style="background:${COLOR[p.sector]}22;color:${COLOR[p.sector]}">
+        ${ETIQ_SECTOR[p.sector]||p.sector}</span> · ${ETIQ_CAT[p.categoria]||p.categoria}</dd>
+      ${p.zona?`<dt>Zona</dt><dd>${esc(p.zona)}</dd>`:""}
+      <dt>Coordenadas</dt><dd>${p.lat.toFixed(6)}, ${p.lon.toFixed(6)}</dd>
+      <dt>Precisión</dt><dd>${esc(ETIQ_PREC[p.precision]||p.precision)}</dd>
+      <dt>Fuente</dt><dd>${esc(p.fuente)}${p.ref?` · <span style="color:#9fb3c8">${esc(p.ref)}</span>`:""}</dd>
+      ${p.cotejo?`<dt>Cotejo</dt><dd style="color:#9fb3c8">${esc(p.cotejo)}</dd>`:""}
+      ${p.nota?`<dt>Nota</dt><dd style="color:#9fb3c8">${esc(p.nota)}</dd>`:""}
+      ${dOrigen}
+    </dl>
+    <div style="margin:12px 0 6px"><button id="bOrigen">Fijar como origen</button></div>
+    <h2 style="font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#9fb3c8;margin:12px 0 6px">
+      Los 8 más cercanos</h2>
+    <table><tbody>${cercanos.map(({o,d})=>`
+      <tr data-id="${esc(o.id)}"><td><span class="dot" style="display:inline-block;background:${COLOR[o.sector]}"></span>
+      ${esc(o.nombre)}</td><td class="num">${fmtD(d)}</td></tr>`).join("")}</tbody></table>`;
+
+  pan.classList.add("open");
+  document.getElementById("bOrigen").onclick = ()=>{ fijarOrigen(p); };
+  pan.querySelectorAll("tbody tr").forEach(tr=>{
+    tr.onclick = ()=>{ const o = PUNTOS.find(x=>x.id===tr.dataset.id); if(o){ map.panTo([o.lat,o.lon]); abrirPanel(o); } };
+  });
+}
+document.getElementById("pCerrar").onclick = ()=>document.getElementById("panel").classList.remove("open");
+
+function fijarOrigen(p){
+  estado.origen = p;
+  document.getElementById("infoOrigen").innerHTML =
+    `Origen: <b>${esc(p.nombre)}</b><br><span style="color:#9fb3c8">${esc(p.direccion)}</span>`;
+  redibujar();
+  abrirPanel(p);
+}
+
+/* ------------------------------------------------------------- medir A hacia B */
+document.getElementById("bMedir").onclick = function(){
+  estado.medir = !estado.medir;
+  estado.medirA = null;
+  this.classList.toggle("on", estado.medir);
+  capaMedicion.clearLayers();
+  map.getContainer().style.cursor = estado.medir ? "crosshair" : "";
+};
+map.on("click", e=>{
+  if(!estado.medir) return;
+  if(!estado.medirA){
+    estado.medirA = e.latlng;
+    capaMedicion.clearLayers();
+    L.circleMarker(e.latlng,{radius:5,color:"#4da3ff",fillOpacity:1}).addTo(capaMedicion);
+  } else {
+    const d = hav(estado.medirA.lat, estado.medirA.lng, e.latlng.lat, e.latlng.lng);
+    L.polyline([estado.medirA, e.latlng],{color:"#4da3ff",weight:2,dashArray:"5 4"}).addTo(capaMedicion);
+    L.circleMarker(e.latlng,{radius:5,color:"#4da3ff",fillOpacity:1}).addTo(capaMedicion);
+    L.marker([(estado.medirA.lat+e.latlng.lat)/2,(estado.medirA.lng+e.latlng.lng)/2],{
+      icon:L.divIcon({className:"", html:`<div class="leyenda" style="white-space:nowrap">${fmtD(d)}</div>`,
+                      iconSize:[0,0]})}).addTo(capaMedicion);
+    estado.medirA = null;
+  }
+});
+
+/* --------------------------------------------------------------------- tabla */
+function pintarTabla(vis){
+  const o = estado.origen;
+  const filas = vis.map(p=>({p, d:o?hav(o.lat,o.lon,p.lat,p.lon):null}));
+  const k = estado.orden, s = estado.asc?1:-1;
+  filas.sort((a,b)=>{
+    if(k==="distancia") return s*((a.d??Infinity)-(b.d??Infinity));
+    return s*String(a.p[k]??"").localeCompare(String(b.p[k]??""),"es");
+  });
+  document.getElementById("tablaTitulo").textContent = `Direcciones (${vis.length})`;
+  document.getElementById("tablaBody").innerHTML = `<table>
+    <thead><tr>
+      <th data-k="nombre">Nombre</th><th data-k="direccion">Dirección</th>
+      <th data-k="colonia">Colonia</th><th data-k="sector">Tipo</th>
+      <th data-k="distancia" class="num">${o?"Dist. al origen":"Distancia"}</th>
+    </tr></thead><tbody>${filas.map(({p,d})=>`
+      <tr data-id="${esc(p.id)}">
+        <td><span class="dot" style="display:inline-block;background:${COLOR[p.sector]}"></span> ${esc(p.nombre)}</td>
+        <td>${esc(p.direccion)}</td><td>${esc(p.colonia)}</td>
+        <td>${ETIQ_SECTOR[p.sector]||p.sector}</td>
+        <td class="num">${d==null?"—":fmtD(d)}</td>
+      </tr>`).join("")}</tbody></table>`;
+  document.querySelectorAll("#tablaBody th").forEach(th=>{
+    th.onclick = ()=>{ const k2=th.dataset.k;
+      estado.asc = estado.orden===k2 ? !estado.asc : true; estado.orden=k2; pintarTabla(vis); };
+  });
+  document.querySelectorAll("#tablaBody tbody tr").forEach(tr=>{
+    tr.onclick = ()=>{ const p=PUNTOS.find(x=>x.id===tr.dataset.id);
+      if(p){ map.setView([p.lat,p.lon],17); abrirPanel(p); } };
+  });
+}
+document.getElementById("bTabla").onclick = function(){
+  const w = document.getElementById("tablaWrap");
+  w.classList.toggle("open");
+  this.classList.toggle("on", w.classList.contains("open"));
+  if(w.classList.contains("open")) pintarTabla(visibles());
+};
+document.getElementById("tablaCerrar").onclick = ()=>{
+  document.getElementById("tablaWrap").classList.remove("open");
+  document.getElementById("bTabla").classList.remove("on");
+};
+
+/* ------------------------------------------------------------------- densidad */
+function actualizarDensidad(vis){
+  // densidad real de puntos por km2, por colonia, con lo que hay cargado
+  const porCol = {};
+  vis.forEach(p=>{ const c=p.colonia||"(sin colonia)"; porCol[c]=(porCol[c]||0)+1; });
+  const top = Object.entries(porCol).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  const nf = n => n.toLocaleString("es-MX");
+  const porKm2 = META.area_municipal_km2 ? (vis.length/META.area_municipal_km2).toFixed(2) : "—";
+  document.getElementById("densidad").innerHTML = `
+    <table><tbody>${top.map(([c,n])=>
+      `<tr><td>${esc(c)}</td><td class="num">${n}</td></tr>`).join("")}</tbody></table>
+    <table style="margin-top:8px"><tbody>
+      <tr><td>Superficie municipal</td><td class="num">${nf(META.area_municipal_km2)} km²</td></tr>
+      <tr><td>Población 2020</td><td class="num">${nf(META.poblacion_municipal_2020)}</td></tr>
+      <tr><td>Densidad de población</td><td class="num">${nf(META.densidad_hab_km2)} hab/km²</td></tr>
+      <tr><td>Suelo habitacional</td><td class="num">${nf(META.area_habitacional_km2)} km²</td></tr>
+      <tr><td>Puntos visibles</td><td class="num">${nf(vis.length)}</td></tr>
+      <tr><td>Concentración</td><td class="num">${porKm2} /km²</td></tr>
+    </tbody></table>
+    <div class="aviso" style="margin-top:8px">${esc(META.aviso_densidad)}</div>`;
+}
+
+/* ------------------------------------------------------------------ exportar */
+function csv(){
+  const cols = ["nombre","direccion","colonia","cp","sector","categoria","lat","lon",
+                "precision","verificacion","ref","fuente"];
+  const o = estado.origen;
+  const enc = v => `"${String(v??"").replace(/"/g,'""')}"`;
+  const filas = visibles().map(p=>{
+    const base = cols.map(c=>enc(p[c]));
+    base.push(enc(o ? Math.round(hav(o.lat,o.lon,p.lat,p.lon)) : ""));
+    return base.join(",");
+  });
+  const txt = cols.concat(["distancia_al_origen_m"]).join(",")+"\n"+filas.join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob(["﻿"+txt],{type:"text/csv;charset=utf-8"}));
+  a.download = "direcciones_xalapa.csv";
+  a.click();
+}
+document.getElementById("bCsv").onclick = csv;
+document.getElementById("bCsv2").onclick = csv;
+
+/* matriz de distancias entre todas las direcciones visibles, en metros */
+document.getElementById("bMatriz").onclick = ()=>{
+  const vis = visibles();
+  if(vis.length < 2){ alert("Se necesitan al menos dos direcciones visibles."); return; }
+  if(vis.length > 400 && !confirm(
+      `Vas a generar una matriz de ${vis.length}x${vis.length} (${(vis.length*vis.length).toLocaleString("es-MX")} celdas).\n`+
+      `Conviene filtrar antes. ¿Continuar de todos modos?`)) return;
+  const enc = v => `"${String(v??"").replace(/"/g,'""')}"`;
+  const lineas = [["origen \\ destino"].concat(vis.map(p=>enc(p.nombre))).join(",")];
+  vis.forEach(a=>{
+    lineas.push([enc(a.nombre)].concat(
+      vis.map(b => a.id===b.id ? "0" : Math.round(hav(a.lat,a.lon,b.lat,b.lon)))).join(","));
+  });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob(["﻿"+lineas.join("\n")],{type:"text/csv;charset=utf-8"}));
+  a.download = "matriz_distancias_xalapa.csv";
+  a.click();
+};
+
+/* -------------------------------------------------------------------- eventos */
+document.getElementById("q").addEventListener("input", e=>{ estado.q=e.target.value; redibujar(); });
+document.getElementById("fPrecision").addEventListener("change", e=>{
+  estado.nivel = +e.target.value; redibujar(); });
+document.getElementById("fRadio").addEventListener("input", e=>{
+  estado.radio = +e.target.value;
+  document.getElementById("lblRadio").textContent = estado.radio ? fmtD(estado.radio) : "apagado";
+  redibujar();
+});
+["cAgrupar","cCalor"].forEach(id=>
+  document.getElementById(id).addEventListener("change", redibujar));
+const capaDe = {cZonas:capaZonas, cColonias:capaColonias, cLimite:capaLimite};
+Object.entries(capaDe).forEach(([id,capa])=>{
+  document.getElementById(id).addEventListener("change", e=>{
+    e.target.checked ? map.addLayer(capa) : map.removeLayer(capa);
+  });
+});
+document.getElementById("bReset").onclick = ()=>{
+  estado.q=""; estado.radio=0; estado.origen=null; estado.nivel=0;
+  document.getElementById("q").value="";
+  document.getElementById("fRadio").value=0;
+  document.getElementById("fPrecision").value="0";
+  document.getElementById("lblRadio").textContent="apagado";
+  document.getElementById("infoOrigen").innerHTML =
+    'Haz clic en cualquier punto y pulsa <b>Fijar como origen</b> para medir distancias y filtrar por radio.';
+  document.querySelectorAll("aside input[type=checkbox][data-v]").forEach(i=>{i.checked=true;});
+  ["sector","categoria","fuente"].forEach(c=>{ estado[c]=new Set(unicos(c)); });
+  capaMedicion.clearLayers();
+  document.getElementById("panel").classList.remove("open");
+  redibujar();
+};
+
+/* ------------------------------------------------------------------- leyenda */
+const leyenda = L.control({position:"bottomright"});
+leyenda.onAdd = ()=>{
+  const d = L.DomUtil.create("div","leyenda");
+  d.innerHTML = Object.keys(COLOR).map(k=>
+    `<div><i style="background:${COLOR[k]}"></i>${ETIQ_SECTOR[k]}</div>`).join("") +
+    `<div><i style="background:#39d98a"></i>Zona habitacional</div>`;
+  return d;
+};
+leyenda.addTo(map);
+
+/* ------------------------------------------------------------------- arranque */
+document.getElementById("sub").textContent =
+  `${META.total_puntos} direcciones verificadas · ${META.del_listado} del listado original · ` +
+  `${META.de_osm} de OpenStreetMap · actualizado ${META.generado}`;
+document.getElementById("procedencia").innerHTML =
+  META.fuentes.map(f=>"· "+esc(f)).join("<br>") +
+  `<br><br>Límite municipal: ${esc(META.limite_municipal)}.
+   Cada punto conserva su método de localización y su identificador OSM para poder cotejarlo.`;
+redibujar();
+
+// El encuadre debe hacerse con el contenedor ya medido; si no, fitBounds
+// devuelve zoom 0 y el mapa aparece vacio.
+const encuadrar = ()=>{
+  map.invalidateSize(false);
+  if(map.getSize().y > 0){
+    map.fitBounds(L.latLngBounds(PUNTOS.map(p=>[p.lat,p.lon])).pad(0.03), {maxZoom:16});
+    return true;
+  }
+  return false;
+};
+if(!encuadrar()){
+  requestAnimationFrame(()=>{ if(!encuadrar()) setTimeout(encuadrar, 250); });
+}
+window.addEventListener("load", ()=>{ if(map.getZoom() < 11) encuadrar(); });
+new ResizeObserver(()=>map.invalidateSize(false)).observe(document.getElementById("map"));
+</script>
+</body>
+</html>
