@@ -171,11 +171,6 @@ tbody tr:hover{background:var(--panel2)}
       <h2>Densidad</h2>
       <div id="densidad"></div>
     </section>
-
-    <section>
-      <h2>Procedencia</h2>
-      <div class="aviso" id="procedencia"></div>
-    </section>
   </aside>
 
   <main>
@@ -506,8 +501,7 @@ function actualizarDensidad(vis){
       <tr><td>Suelo habitacional</td><td class="num">${nf(META.area_habitacional_km2)} km²</td></tr>
       <tr><td>Puntos visibles</td><td class="num">${nf(vis.length)}</td></tr>
       <tr><td>Concentración</td><td class="num">${porKm2} /km²</td></tr>
-    </tbody></table>
-    <div class="aviso" style="margin-top:8px">${esc(META.aviso_densidad)}</div>`;
+    </tbody></table>`;
 }
 
 /* ------------------------------------------------------------------ exportar */
@@ -596,10 +590,6 @@ leyenda.addTo(map);
 document.getElementById("sub").textContent =
   `${META.total_puntos} direcciones verificadas · ${META.del_listado} del listado original · ` +
   `${META.de_osm} de OpenStreetMap · actualizado ${META.generado}`;
-document.getElementById("procedencia").innerHTML =
-  META.fuentes.map(f=>"· "+esc(f)).join("<br>") +
-  `<br><br>Límite municipal: ${esc(META.limite_municipal)}.
-   Cada punto conserva su método de localización y su identificador OSM para poder cotejarlo.`;
 redibujar();
 
 // El encuadre debe hacerse con el contenedor ya medido; si no, fitBounds
